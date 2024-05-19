@@ -1,0 +1,41 @@
+# ”build-system” used to build and install the package.
+[build-system]
+requires = ["setuptools", "wheel"] # PEP 508 specifications.
+
+# information about the project
+
+# The [project] section needs three other pieces of information:
+# The packages required to execute your application.
+# Any packages or tools required to test your application.
+# Any packages or tools required to develop your application
+[project]
+name = "project_0"
+version = "1.0.0"
+authors = [
+{name = "Hoang Viet", email = "example@gmail.com"},
+]
+description = "Real-World Python Projects -- Project 0."
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+# Packages required -- None for Project Zero.
+]
+[project.optional-dependencies]
+dev = [
+# Development tools to work on this project"sphinx==7.0.1",
+"sphinxcontrib-plantuml==0.25",
+"pip-tools==6.13.0"
+]
+test = [
+# Testing tools to test this project
+"pytest==7.2.0",
+"tox==4.0.8",
+"behave==1.2.6"
+]
+
+# The dependencies line lists the dependencies required to execute the application.
+# Some projects — like this one — rely on the standard library, and nothing more
+# needs to be added. The [project.optional-dependencies] section contains two
+# lists of additional packages: those required for development, and those required
+# for testing.

@@ -1,0 +1,5 @@
+venv
+project_0.egg-info
+.tox
+__pycache__
+src/project_0.egg-info
